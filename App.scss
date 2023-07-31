@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Mochiy+Pop+One&family=Poppins:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+$bg: rgb(16, 16, 16);
+.header {
+  height: 70px;
+  background-color: $bg;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  > img {
+    height: 70%;
+  }
+  > div {
+    width: 100%;
+    margin-left: 4vmax;
+    > a {
+      margin: 2vmax;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+  }
+  > svg {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
+  }
+}
